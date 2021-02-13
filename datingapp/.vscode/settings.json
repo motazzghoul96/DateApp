@@ -1,0 +1,12 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "DefaultConnection",
+            "group": "datingapp",
+            "database": "${workspaceFolder:datingapp}/API/datingapp.db"
+        }
+    ],
+    "git.ignoreLimitWarning": true
+}
