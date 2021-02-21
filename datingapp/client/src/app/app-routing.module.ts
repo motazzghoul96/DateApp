@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 import { HomeComponent } from './home/home.component';
 import { ListsComponent } from './lists/lists.component';
 import { MemberDetailsComponent } from './members/member-details/member-details.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
     {path:'messages',component:MessagesComponent,canActivate:[AuthGuard]},
    ]
  },
+ 
   {path:'**',component:HomeComponent,pathMatch:'full'},
 ];
 

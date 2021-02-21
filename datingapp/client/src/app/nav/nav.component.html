@@ -5,8 +5,8 @@
      
      
      <a class="navbar-brand" routerLink="/">Dating App</a>
-       <ul class="navbar-nav " *ngIf="accountService.currentUser$ | async" >
-       <ng-container>
+       <ul class="navbar-nav " >
+       <ng-container  *ngIf="accountService.currentUser$ | async">
            <li class="nav-item ">
              <a class="nav-link" aria-current="page" routerLink="/members" routerLinkActive="active">Matches</a>
            </li>
@@ -19,7 +19,9 @@
           
        
           </ng-container>
+         
        </ul>
+      
        <div class="dropdown" *ngIf="(accountService.currentUser$ | async ) as user" dropdown>
            <a  class="dropdown-toggle text-light" dropdownToggle>Welcome {{user.userName|titlecase}}</a>
            <div class="dropdown-menu" *dropdownMenu>
@@ -33,9 +35,9 @@
        <form #loginForm="ngForm" *ngIf="(accountService.currentUser$ | async)===null" class="d-flex m-auto" (ngSubmit)="login()" autocomplete="off" >
          <input class="form-control me-2" type="text" placeholder="userName"
          name="username"
-         [(ngModel)]="model.username">
+         [(ngModel)]="model.username" required="email">
          <input class="form-control me-2" type="password" placeholder="password"
-         name="password"  [(ngModel)]="model.password">>
+         name="password"  [(ngModel)]="model.password" required>
          <button class="btn btn-outline-success" type="submit">Login</button>
        </form>
      
