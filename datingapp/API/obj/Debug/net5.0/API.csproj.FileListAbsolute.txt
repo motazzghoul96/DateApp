@@ -66,3 +66,6 @@ C:\Users\motaz\Core5\datingapp\api\bin\Debug\net5.0\System.IdentityModel.Tokens.
 C:\Users\motaz\Core5\datingapp\api\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\motaz\Core5\datingapp\api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\motaz\Core5\datingapp\api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\motaz\Core5\datingapp\api\bin\Debug\net5.0\Data\UserSeed.json
+C:\Users\motaz\Core5\datingapp\api\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\motaz\Core5\datingapp\api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
