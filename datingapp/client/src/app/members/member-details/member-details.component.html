@@ -1,12 +1,15 @@
 <div class="row " *ngIf="member">
     <div class="col-4">
+        <div class="card">
         <img src="{{member.photoUrl||'./assets/user.png'}}" alt="{{member.knownAs}}"
-         class="card-img-top thumbanil">
+         class="card-img-top img-thumbnail">
          <div class="card-body">
-             <div>
+           
+            <div>
                  <strong>Location : {{member.city}},{{member.country}}</strong>
              </div>
-           <div>
+            
+             <div>
                 <strong>age : {{member.age}}</strong>
             </div>  
              <div>
@@ -27,6 +30,9 @@
              </div>
          </div>
     </div>
+    
+    </div>
+    
     <div class="col-8">
         <tabset class="member-tabset">
             <tab heading='About {{member.knownAs}}'>
@@ -51,5 +57,5 @@
                 
             </tab>
         </tabset>
-    </div>
+</div>
 </div>

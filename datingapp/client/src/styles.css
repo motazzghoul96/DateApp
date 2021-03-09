@@ -43,4 +43,6 @@
     border-top: 1px solid #eee;
     padding: 15px 0;
   }
-  
+  router-outlet{
+    margin-top: 10px;
+  }

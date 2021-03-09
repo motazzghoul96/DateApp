@@ -1,6 +1,6 @@
 <div class="row " style="margin-top: 3rem;">
 
-    <div class="col-md-4 col-xs-12 col-sm-6  col-lg-2 mt-3" *ngFor="let member of members">
+    <div class="col-md-4 col-xs-12 col-sm-6  col-lg-2 mt-3" *ngFor="let member of members$ | async">
       <app-member-card [member]="member" ></app-member-card>
      
     </div>
