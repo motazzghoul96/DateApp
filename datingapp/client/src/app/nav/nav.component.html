@@ -7,7 +7,7 @@
      <a class="navbar-brand" routerLink="/">Dating App</a>
     
     
-       <ul class="navbar-nav " >
+       <ul class="navbar-nav mr-auto" >
        <ng-container  *ngIf="accountService.currentUser$ | async">
            <li class="nav-item ">
              <a class="nav-link" aria-current="page" routerLink="/members" routerLinkActive="active">Matches</a>
@@ -21,9 +21,7 @@
           
        
           </ng-container>
-          <li class="nav-item">
-            <a class="nav-link " routerLink="/errors" routerLinkActive="active">errors</a>
-          </li>
+         
          
        </ul>
        
@@ -46,7 +44,7 @@
  <div class="dropdown d-flex" *ngIf="(accountService.currentUser$ | async ) as user" dropdown>
   
   <a  class="dropdown-toggle text-light " dropdownToggle>
-    <img src="{{user.photoUrl}}" alt="{{user.userName}}"> Welcome {{user.username}}</a>
+    <img src="{{user.photoUrl ||'./assets/user.png'}}" alt="{{user.userName}}"> Welcome {{user.username}}</a>
   <div class="dropdown-menu" *dropdownMenu>
       <a routerLink="/member/edit" class="dropdown-item">Edit profile</a>
       <a class="dropdown-item" (click)="logout()">logout</a>

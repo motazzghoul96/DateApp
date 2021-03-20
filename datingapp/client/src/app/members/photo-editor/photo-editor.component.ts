@@ -64,8 +64,13 @@ this.memberService.setMainPhoto(photo.id).subscribe(()=>{
       }
       this.uploader.onSuccessItem=(item,response,statuse,headers)=>{
         if (response) {
-          const photo=JSON.parse(response);
+          const photo:Photo=JSON.parse(response);
           this.member.photos.push(photo);
+          if (photo.isMain) {
+            this.user.photoUrl=photo.url;
+            this.member.photoUrl=photo.url;
+            this.accountService.setcurrentuser(this.user)
+          }
         }
       }
   }
