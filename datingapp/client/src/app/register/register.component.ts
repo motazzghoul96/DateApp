@@ -28,7 +28,7 @@ validationErrors:string[]=[]
   initializeForm(){
     this.registerForm=this.fb.group({
       username:['',Validators.required],
-      gender:['Male'],
+      gender:['male'],
       knownAs:['',Validators.required],
       dateOfBirth:['',Validators.required],
       city:['',Validators.required],

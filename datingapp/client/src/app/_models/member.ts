@@ -8,6 +8,7 @@ import { Photo } from "./photo";
         photoUrl:string;
         knownAs: string;
         created: Date;
+        age:number;
         lastActive: Date;
         introduction: string;
         lookingFor: string;

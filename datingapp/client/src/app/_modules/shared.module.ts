@@ -7,7 +7,10 @@ import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { FileUploadModule } from 'ng2-file-upload';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import {BsDatepickerModule} from 'ngx-bootstrap/datepicker'
-import { from } from 'rxjs';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { TimeagoModule } from 'ngx-timeago';
 
 
 
@@ -23,7 +26,12 @@ import { from } from 'rxjs';
     NgxGalleryModule,
     NgxSpinnerModule,
     FileUploadModule,
-    BsDatepickerModule.forRoot()
+    CollapseModule.forRoot(),
+    BsDatepickerModule.forRoot(),
+    PaginationModule.forRoot(),
+    ButtonsModule.forRoot(),
+    TimeagoModule.forRoot()
+    
     
   
   
@@ -34,7 +42,12 @@ import { from } from 'rxjs';
     NgxGalleryModule,
     NgxSpinnerModule,
     FileUploadModule,
-    BsDatepickerModule
+    BsDatepickerModule,
+    PaginationModule,
+    CollapseModule,
+    ButtonsModule,
+    TimeagoModule
+
     
 
     

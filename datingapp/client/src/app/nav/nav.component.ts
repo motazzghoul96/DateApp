@@ -1,12 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { error } from 'protractor';
-import { from, Observable } from 'rxjs';
-import { User } from '../_models/user';
 import { AccountService } from '../_services/account.service';
-import {$} from 'jquery'
-declare var $: any;
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',

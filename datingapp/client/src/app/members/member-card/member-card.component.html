@@ -1,5 +1,6 @@
 
-    <div class="containercol-md-12">
+    
+        
 <div class="card mb-4 ">
     <div class="card-img-wrapper">
         <img src="{{member.photoUrl  || './assets/user.png'}}" alt="{{member.knownAs}}" class="card-img-top">
@@ -14,9 +15,9 @@
     </div>
     <div class="card-body p-1">
         <h6 class="card-title text-center mb-1"> <i class="fa fa-user mr-2"></i>
-        {{member.knownAs}}</h6>
+        {{member.knownAs}},{{member.age}}</h6>
         
         <p class="card-text text-muted text-center">{{member.country}}</p>
     </div>
 </div>
-</div>
+

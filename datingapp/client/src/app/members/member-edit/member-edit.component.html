@@ -23,11 +23,11 @@
                 <strong>age : {{member.age}}</strong>
             </div>  
              <div>
-                <strong>Last Active : {{member.lastActive}}</strong>
+                <strong>Last Active : {{member.lastActive|timeago}}</strong>
             </div>
             
             <div>
-                <strong>Member Since : {{member.created}}</strong>
+                <strong>Member Since : {{member.created|date:'dd MMMM yyyy'}}</strong>
             </div>
            
              
